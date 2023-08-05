@@ -77,6 +77,10 @@
 	transition: background 0.1s, height 0.1s;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 [contentEditable=true]:empty:not(:focus):before {
 	content: attr(data-text)
   }
