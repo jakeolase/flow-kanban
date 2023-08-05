@@ -11,6 +11,11 @@ export default class Item {
 
 		this.elements.root.dataset.id = id;
 		this.elements.input.textContent = content;
+
+		// if (content == ""){
+		// 	this.elements.input.textContent = "Write your task here...";
+		// }
+
 		this.content = content;
 		this.elements.root.appendChild(bottomDropZone);
 
@@ -56,7 +61,7 @@ export default class Item {
 
 		return range.createContextualFragment(`
 			<div class="kanban__item" draggable="true">
-				<div class="kanban__item-input" contenteditable></div>
+				<div class="kanban__item-input" data-text="Write your task here..." contentEditable=true ></div>
 			</div>
 		`).children[0];
 	}
