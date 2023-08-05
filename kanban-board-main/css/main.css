@@ -18,7 +18,7 @@
 }
 
 .kanban__column:not(:last-child) {
-	margin-right: 30px;
+	margin-right: 1.5vw;
 }
 
 .kanban__column-title {
@@ -33,18 +33,18 @@
     border-radius: 10px;
     border: solid 1px #d4d4d4;
     box-sizing: border-box;
+	color: #808080;
     font-family: 'Raleway';
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    height: 130px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 18vh;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
     resize: none;
     transition: all 0.3s ease-in-out;
-    width: 320px;
+    width: 20.8vw;
 	padding: 10px;
-
-
+	overflow-y: scroll;
 }
 
 .kanban__item-input::after{
@@ -62,6 +62,7 @@
     transition: opacity 0.3s ease-in-out;
     width: 300px;
     z-index: -0.5;
+	
 }
 
 .kanban__item-input:hover{
@@ -69,13 +70,22 @@
 }
 
 .kanban__dropzone {
+	z-index: 2;
 	height: 10px;
-	transition: background 0.15s, height 0.15s;
+	width: 22vw;
+	border-radius: 10px;
+	transition: background 0.1s, height 0.1s;
 }
 
+[contentEditable=true]:empty:not(:focus):before {
+	content: attr(data-text)
+  }
+
 .kanban__dropzone--active {
-	height: 25px;
-	background: rgba(0, 0, 0, 0.25);
+	height: 18vh;
+	width: 22vw;
+	border-radius: 10px;
+	background: #d1d1d1;
 }
 
 .kanban__add-item {
@@ -89,12 +99,11 @@
     font-size: 16px;
     font-weight: 600;
     height: 30px;
-    min-width: 320px;
+    min-width: 20.8vw;
     outline: none;
     transition: background 0.2s;
-    margin-left: 10px;
+    margin-left: 0.5vw;
 	margin-bottom: 10px;
-	margin-top: -10px;
 }
 
 .kanban__add-item:hover{
@@ -227,14 +236,13 @@ body{
     display: block;
     grid-template-columns: repeat(auto-fill, 200px);
     margin: auto;
-    padding-bottom: 20px;
     width: 22.5vw;
 	overflow-x: hidden;
 }
 .todoScroll{
     overflow-y: scroll;
-    height: 590px;
-        background-color: #f4f4f4;
+    height: 70vh;
+    background-color: #f4f4f4;
 }
 .todoScroll.dark-theme6{
     overflow-y: scroll;
