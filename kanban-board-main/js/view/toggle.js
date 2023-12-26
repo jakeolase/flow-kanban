@@ -1,5 +1,5 @@
 const toggleSwitch = document.querySelector("#toggle");
-const kanbanGroup = document.querySelectorAll(".kanbanGroup");
+const todoKanban = document.querySelectorAll(".todoKanban");
 const todoScroll = document.querySelectorAll(".kanban__item");
 const noteInstance = document.querySelectorAll(".kanban__item-input");
 const backDrop = document.querySelectorAll("#backDrop");
@@ -16,8 +16,8 @@ const hoverMenu = document.querySelectorAll(".custom-context-menu ul li a");
 
 
 function toggleMode() {
-  kanbanGroup.forEach((kanbanGroup) => {
-    kanbanGroup.classList.toggle("dark-theme3");
+  todoKanban.forEach((todoKanban) => {
+    todoKanban.classList.toggle("dark-theme3");
   });
   todoScroll.forEach((todoScroll) => {
     todoScroll.classList.toggle("dark-theme6");

@@ -30,11 +30,11 @@
 
 .kanban__item-input {
     z-index:1;
-    background: rgba(255, 255, 255, 0.999);
+    background: rgba(255, 255, 255, 0.27);
     border-radius: 10px;
-    border: solid 1px #d4d4d4;
+    border: 1px solid #757575a2;
     box-sizing: border-box;
-	color: #808080;
+	color: #1a1a1a;
     font-family: 'Raleway';
     font-size: 15px;
     font-weight: 600;
@@ -95,7 +95,8 @@ textarea:focus, input:focus{
     margin-top: 5px;
     margin-bottom: 5px;
 	border-radius: 10px;
-	background: #d1d1d1;
+	background: #5b5b5b7c;
+    border: 1px dashed #c4c4c4
 }
 
 .kanban__add-item {
@@ -159,7 +160,7 @@ body{
     margin-left:-20px;
     margin-right: 30px;
     width: 270px;
-    height: 755px;
+    height: 100vh;
     background-color: #ffffff;
 }
 
@@ -226,10 +227,12 @@ body{
     margin-left: -20px;
     margin-right: -20px;
     width: 309px;
-    height: 500px;
+    height: 60vh;
     background-image: url('../img/flowBackDrop.png');
     background-size: cover;
     opacity: 0.7;
+    position: fixed;
+    bottom: 0%;
 }
 
 #backDrop.nightmode{
@@ -252,7 +255,7 @@ body{
 .todoScroll{
     overflow-y: scroll;
     height: 70vh;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 .todoScroll.dark-theme6{
     overflow-y: scroll;
@@ -263,26 +266,17 @@ body{
 
 .todoKanban, .ongoingKanban, .doneKanban{
     border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    border: 1px solid #757575c2;
     margin-right: 40px;
     padding-top: 15px;
     padding-left: 10px;
-    height: 640px;
-    background-color: #f4f4f4;
+    height: 90vh;
+    background-color: #cbcbcb42;
 }
 
-.kanbanGroup.dark-theme3{
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
-    margin-right: 40px;
-    padding-top: 15px;
-    padding-left: 10px;
-    height: 640px;
-    background-color: #262626;
+.dark-theme3{
+    background-color: #000000;
 }
-
 .note{
     background: rgba(255, 255, 255, 0);
     border-radius: 0px 0px 10px 10px;    
@@ -355,7 +349,7 @@ body{
 .noteInstance{
     background: rgba(255, 255, 255, 0.999);
     border-radius: 10px;
-    border: solid 1px #d4d4d4;
+    border: solid 1px #b6b6b6;
     box-sizing: border-box;
     font-family: 'Raleway';
     font-size: 16px;
@@ -373,7 +367,7 @@ body{
 .kanban__item-input.dark-theme4{
     background: #333333!important;
     border-radius: 10px;
-    border: solid 1px #6e6d6d;
+    border: solid 1px #b6b6b6;
     box-sizing: border-box;
     font-family: 'Raleway';
     font-size: 16px;

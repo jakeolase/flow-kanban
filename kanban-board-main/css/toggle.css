@@ -38,7 +38,6 @@
         .dark-theme {
             background-color: #1F1F1F;
             color: #f2f2f2;
-            background-image: url("../img/bg_night.png");
             background-size: cover;
 
         }
