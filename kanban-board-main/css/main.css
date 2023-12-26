@@ -669,3 +669,10 @@ textarea{
     margin-left: 25px ;
     margin-right: auto;
   }
+
+.dateLine{
+    color: #737373;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+}
