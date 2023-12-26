@@ -16,6 +16,7 @@ export default class Item {
 		this.elements.root.dataset.id = id;
 		this.elements.input.textContent = content;
 
+
 		// if (content == ""){
 		// 	this.elements.input.textContent = "Write your task here...";
 		// }
