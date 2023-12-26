@@ -41,13 +41,12 @@
     height: 18vh;
     margin-left: 0.5vw;
     margin-right: 1vw;
-    margin-bottom: 1vh;
     resize: none;
     transition: all 0.3s ease-in-out;
     width: 20.8vw;
 	padding: 10px;
 	overflow-y: scroll;
-    position:relative;
+    
 }
 
 .kanban__item-input::after{
@@ -65,7 +64,6 @@
     resize: none;
     transition: opacity 0.3s ease-in-out;
     width: 300px;
-    position:fixed;
 	
 }
 
@@ -74,12 +72,11 @@
 }
 
 .kanban__dropzone {
-	z-index: 0;
-	height: 19vh;
+	z-index: 2;
+	height: 12px;
 	width: 22vw;
 	border-radius: 10px;
-	transition: background 0.1s, height 0.1s;
-    position:fixed;
+    transition: ease-out 0.1s;
 }
 
 textarea:focus, input:focus{
@@ -91,9 +88,12 @@ textarea:focus, input:focus{
   }
 
 .kanban__dropzone--active {
+    display: block;
     z-index: 0;
-	height: 19vh;
-	width: 22vw;
+	height: 10vh;
+	width: 21.7vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
 	border-radius: 10px;
 	background: #d1d1d1;
 }
@@ -370,7 +370,7 @@ body{
 
 }
 
-.noteInstance.dark-theme4{
+.kanban__item-input.dark-theme4{
     background: #333333!important;
     border-radius: 10px;
     border: solid 1px #6e6d6d;
@@ -566,7 +566,7 @@ textarea{
     opacity: 0;
     pointer-events: none;
     transition: opacity 100ms ease;
-    
+    z-index: 100;
 
   }
   
