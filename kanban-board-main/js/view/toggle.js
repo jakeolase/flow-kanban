@@ -1,7 +1,7 @@
 const toggleSwitch = document.querySelector("#toggle");
 const kanbanGroup = document.querySelectorAll(".kanbanGroup");
-const todoScroll = document.querySelectorAll(".todoScroll");
-const noteInstance = document.querySelectorAll(".noteInstance");
+const todoScroll = document.querySelectorAll(".kanban__item");
+const noteInstance = document.querySelectorAll(".kanban__item-input");
 const backDrop = document.querySelectorAll("#backDrop");
 const note = document.querySelectorAll(".note");
 const instructionPopup = document.querySelector('.instructionOverlay .instructionPopup');
@@ -24,6 +24,9 @@ function toggleMode() {
   });
   backDrop.forEach((backDrop) => {
     backDrop.classList.toggle("nightmode");
+  }); 
+  noteInstance.forEach((noteInstance) => {
+    noteInstance.classList.toggle("dark-theme4");
   });
   instructionPopup.classList.toggle("nightMODE1");
   titleNight.forEach((titleNight) => {
