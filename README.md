@@ -51,30 +51,30 @@ As mentioned, Flow is a summative project in partial fulfillment for the require
 
 `*  Deprecated, used only for the requirements of the course`
 
-### @jakeolase
+#### @jakeolase
 - Project Lead of Flow
 - UI/UX Design
 - Add, Delete, and Save Task Note Function
 - User Welcome Banner`*`
 - **Redevelopment of Flow v0.2**
 
-### @godwincaraan
+#### @godwincaraan
 - Login Page Front-End and UI/UX`*`
 - Night Mode Function
 
-### @jongrantusa
+#### @jongrantusa
 - Task Note Drag and Drop Functionality
 - How to Use Section`*`
 
-### @RamiloVOrejanaJr
+#### @RamiloVOrejanaJr
 - Task Note Drag and Drop Functionality
 
-### @StickyFingers001
+#### @StickyFingers001
 - Right Click Menu
 - Bold, Italicize, and Highlight Function\
 `Deprecated due to new Kanban Board logic in v0.2. Might be added on future release.`
 
-### @anthony2517
+#### @anthony2517
 - Right Click Menu
 
 
